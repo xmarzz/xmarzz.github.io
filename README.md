@@ -1,2 +1,2 @@
 # portfolio
-a portfolio which is under progress 
+a portfolio which is under progression
