@@ -1,4 +1,1 @@
-<<<<<<< HEAD
-# portfolio
-a portfolio which is under progression
-=======
+a portfolio currently in progress
