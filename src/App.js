@@ -1,22 +1,29 @@
-import React from "react"
-import './App.css'
-import Home from './Home/Home'
-import About from './About/About.js'
-import My_work from './My_work/My_work'
+import React from "react";
+import "./App.css";
+import Home from "./Home/Home";
+import About from "./About/About.js";
+import MyWork from "./myWork/myWork.js";
+import Navbar from "./Navbar/Navbar.js";
 
-const App=()=>{
-    return(
-        <div className="main">
-            <Home/>
-            <About/>
-            <My_work/>
-         </div>
-            
-    
-        )
-}
+const App = () => {
+  return (
+    <div className="body">
+      <div>
+        {" "}
+        <Navbar />{" "}
+      </div>
+      <section id="home">
+        <Home />
+      </section>
+      <section id="about">
+        <About />
+      </section>
+      <section id="myWork">
+        {" "}
+        <MyWork />{" "}
+      </section>
+    </div>
+  );
+};
 
-
-
-export default App
-
+export default App;

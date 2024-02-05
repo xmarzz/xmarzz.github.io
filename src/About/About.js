@@ -12,7 +12,7 @@ const About =()=>{
             <div className='about_details'>
              I've always sought out opportunities and challenges that are meaninful to me. 
              although my professional path has taken many twists and turns. i'm currently based
-             in india, i'm not currently working anywhere and am open to opportunities.
+             in india.
              </div>
              <div className='about_tech'>i'm familiar working with:</div>
 

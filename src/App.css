@@ -1,7 +1,16 @@
 
-.main{
-    background-image: linear-gradient(to right,#1f1a24 ,#332940)
-    
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+
+.body{
+    background-image: linear-gradient(to right,#1f1a24 ,#332940);
+    padding: 0;
+    margin: 0;
 }
 
 
