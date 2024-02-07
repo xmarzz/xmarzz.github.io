@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Home.css";
 
 const Home = () => {
+
+
   return (
     <div>
       <div className="home_design">
@@ -18,7 +20,7 @@ const Home = () => {
         <h2 className="home_intro2"> I create stuff sometimes. </h2>
 
         <a href="mailto:marzelon44@gmail.com" className="home_mailme">
-          Say hi!
+          Say hi! 
         </a>
       </div>
     </div>
