@@ -1,24 +1,40 @@
 .about{
     padding: 450px 15%;
     display: flex;
+    flex-direction: row;
+    max-width: 112em;
+    font-family: var(--font-title);
+}
+
+.about-outside{
+    display: flex;
     flex-direction: column;
 }
 
 .about_inside{
-    font-size: 36px;
-    font-family: 'League Spartan', sans-serif;
-    font-family: 'Montserrat Alternates', sans-serif;
-     padding: 12px 0px;
-    
+    padding: 12px 0px;
+    color: var(--lightest-slate);
+    font-size: 46px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-line hr{
+    border: none;
+    height: 1px;
+    background-color: var(--lightest-slate);
+    margin: 15px 3px;
 }
 
 .about_details{
-    font-size: 26px;
-    padding-right: 36%ca;
+    font-size: 18px;
+    max-width: 969px;
+    line-height: 1.5;
 }
 
 .about_tech{
-    font-size: 26px;
+    font-size: 18px;
     padding-top: 24px;;
 }
 
@@ -27,3 +43,38 @@ ul{
     grid-template-columns: 1fr 1fr;
 }
 
+.about_lists{
+    margin: 25px 6px;
+    font-size: 16px;
+}
+
+.about_skills-names{
+    margin: 3px 0 0 0;
+    color: var(--slate);
+}
+
+.about_actualMe{
+    margin: 16px 0 0 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.about_skills{
+    display: flex;
+    flex-direction: row;
+}
+
+.about_details, .about_tech, .about_actualMe, about_lists{
+    color: var(--slate);
+}
+
+.about_arrow{
+    color: var(--green-bright);
+}
+
+.about-photo{
+    margin: 84px 0 0 45px;
+}
+.about-photo img{
+    border-radius: 12px;
+}
