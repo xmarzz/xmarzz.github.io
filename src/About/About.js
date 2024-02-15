@@ -26,7 +26,7 @@ const About = () => {
           to me. although my professional path has taken many twists and turns.
           i'm currently based in india.
         </div>
-        <div className="about_tech">i'm familiar working with:</div>
+        <div className="about_tech">I'm familiar working with:</div>
 
         <ul className="about_lists">
           {skills.map((skill) => (

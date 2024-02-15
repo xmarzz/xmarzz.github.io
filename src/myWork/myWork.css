@@ -1,0 +1,24 @@
+.myWork{
+    padding: 0px 0px 450px 15%;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 330px 15px 0px;
+}
+
+.myWork_title{
+    font-family: var(--font-title);
+    font-size: 46px;
+    font-weight: 700;
+    padding: 12px 0px;
+    color: var(--lightest-slate);
+}
+
+.myWork_line hr{
+    border: none;
+    height: 1px;
+    background-color: var(--lightest-slate);
+    margin: 15px 3px;
+}
+
+
+
