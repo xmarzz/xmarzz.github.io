@@ -41,12 +41,13 @@
     max-width: 80px;
     font-size: 22px;
     text-decoration: none;
-    transition: background-color 0.3s ease-in-out; 
+    transition: text-decoration 0.3s ease-in-out; 
 }
 
 .home_mailme:hover {
     text-decoration: underline;
 }
+
 
 
 
