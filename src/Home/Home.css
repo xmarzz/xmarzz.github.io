@@ -48,7 +48,25 @@
     text-decoration: underline;
 }
 
+@media (max-width: 768px){
+    .home_page{
+        padding-top: 450px;
+        padding-left: 4%;
+    }
 
+    .home_intro{
+        font-size: 46px;
+        padding: 0 12px;
+    }   
 
+    .home_intro2{
+        font-size: 28px;
+        padding: 0 12px;
+    }
 
+    .home_mailme{
+        font-size: 18px;
+        padding: 0 12px;
+    }
+}
 
