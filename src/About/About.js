@@ -22,9 +22,10 @@ const About = () => {
           </div>
         </div>
         <div className="about_details">
-          I've always sought out opportunities and challenges that are meaninful
-          to me. although my professional path has taken many twists and turns.
-          i'm currently based in india.
+          I've always been driven by a passion for challenges that align with
+          my core values and aspirations. My professional journey, marked by
+          numerous twists and turns, has been a testament to my adaptability and
+          resilience. Currently, I am based in India.
         </div>
         <div className="about_tech">I'm familiar working with:</div>
 
@@ -38,17 +39,23 @@ const About = () => {
             </div>
           ))}
         </ul>
-
+        
         <div className="about_actualMe">
           When i'm not working, i enjoy immersing myself in the world of
           science, keeping up with latest advancements. i have a voracious
           appetite for reading and delve into a wide range of topics.
-          additionally, i enjoy in playing variety of games as a way to
-          unwind and have fun.
+          additionally, i enjoy in playing variety of games as a way to unwind
+          and have fun.
         </div>
       </div>
       <div className="about-photo">
-        <img src="/boyThink.jpg" alt="My Profile Picture" sizes="450" width={300} height={300}/>
+        <img
+          src="/boyThink.jpg"
+          alt="My Profile Picture"
+          sizes="450"
+          width={300}
+          height={300}
+        />
       </div>
     </div>
   );

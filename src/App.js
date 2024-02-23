@@ -4,6 +4,8 @@ import Home from "./Home/Home";
 import About from "./About/About.js";
 import MyWork from "./myWork/myWork.js";
 import Navbar from "./Navbar/Navbar.js";
+import Footer from "./Footer/Footer.js";
+
 
 const App = () => {
   return (
@@ -21,6 +23,9 @@ const App = () => {
       <section id="myWork">
         {" "}
         <MyWork />{" "}
+      </section>
+      <section id='footer'>
+        <Footer/>
       </section>
     </div>
   );

@@ -74,7 +74,79 @@ ul{
 
 .about-photo{
     margin: 84px 0 0 45px;
+    transition: transform   0.3s ease;
 }
+.about-photo:hover{
+    transform: scaley(1.05);
+}
+
+@keyframes slideInFromLeft {
+    0% {
+     transform: translateX(-10px);
+     opacity:  0;
+   }
+    100% {
+     transform: translateX(0);
+     opacity:  1;
+   }
+ }
+
 .about-photo img{
     border-radius: 12px;
+}
+
+
+@media (max-width: 768px){
+    .about{
+        padding: 450px 4%;
+        display: flex;
+        flex-direction: column;
+        max-width: 112em;
+        font-family: var(--font-title);
+    }
+
+    .about-outside{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about_inside{
+        padding: 12px 0px;
+        color: var(--lightest-slate);
+        font-size: 32px;
+        font-weight: 700;   
+        display: flex;
+        flex-direction: column;
+    }               
+
+    .about_details{
+        font-size: 14px;
+        max-width: 969px;
+        line-height: 1.5;
+    }
+
+    .about_tech{
+        font-size: 14px;
+        padding-top: 24px;;
+    }
+
+    .about_skills-names{
+        font-size: 14px;
+    }
+
+    .about_actualMe{
+        font-size: 14px;
+    }
+
+    .about-photo{
+        margin: 12px 122px 2 4;
+        align-items: center;
+        justify-content: center;
+        size: 350px;
+        display: none;
+    }
+
+    .about-photo img{
+        border-radius: 12px;
+    }
 }
