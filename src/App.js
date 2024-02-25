@@ -6,7 +6,6 @@ import MyWork from "./myWork/myWork.js";
 import Navbar from "./Navbar/Navbar.js";
 import Footer from "./Footer/Footer.js";
 
-
 const App = () => {
   return (
     <div className="body">
@@ -24,9 +23,12 @@ const App = () => {
         {" "}
         <MyWork />{" "}
       </section>
+     
       <section id='footer'>
         <Footer/>
       </section>
+
+
     </div>
   );
 };

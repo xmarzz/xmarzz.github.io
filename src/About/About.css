@@ -1,5 +1,5 @@
 .about{
-    padding: 450px 15%;
+    padding: 200px 15% 200px 15%;
     display: flex;
     flex-direction: row;
     max-width: 112em;
@@ -23,7 +23,7 @@
 .about-line hr{
     border: none;
     height: 1px;
-    background-color: var(--lightest-slate);
+    background-color: #475da3;
     margin: 15px 3px;
 }
 
@@ -149,4 +149,16 @@ ul{
     .about-photo img{
         border-radius: 12px;
     }
+}
+
+@media screen and (min-width:  768px) and (max-width:  1024px){
+    .about-photo{
+        display: none;
+    }
+
+     
+     .about_tech, .about_actualMe{
+        font-size: 16px;
+    }
+    
 }
