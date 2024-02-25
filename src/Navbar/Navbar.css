@@ -24,7 +24,18 @@
     margin: 12px;
 }
 
+.navbar_menu-icon,
+.navbar_options-mobile {
+    display: none;
+}
+
 @media (max-width:  768px) {
+
+    .navbar_menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
     .navbar {
         flex-direction: row;
         justify-content: space-between;
@@ -45,11 +56,83 @@
         display: inline-block;
     }
 
+    .navbar-outside {
+        background-color: var(--navy);
+        position: fixed; 
+        top:  0; 
+        left:  0; 
+        width:  100%; 
+        z-index:  1000; 
+        padding-top: 40px;
+    }
+    
+    .navbar_menu{
+        position: fixed;
+        right: 4px;
+        top: 3px;
+    }
+
     .navbar_menuIcon{
-        display: block;
         right: 2px;
         top: 2px;
         position: fixed;
-
+        color: aliceblue;
+        margin: 2px 6px 2px 2px;;
     }
+
+    .navbar_options-mobile{
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        right: 0px;
+        top: 40px;
+        bottom: 0px;
+        justify-content: end;
+        display: none;
+        
+    }
+
+    .navbar-home_mobile {
+
+        font: var(--font-title);
+        color: var(--lightest-slate);
+        text-decoration: none;
+        font-size: 22px;
+        padding: 16px;
+        right: 0px;
+        align-items: end;
+    }
+
+    .navbar_options-mobile.open{
+        display: block;
+    }
+
+    .navbar-about_mobile{
+
+        font: var(--font-title);
+        color: var(--lightest-slate);
+        text-decoration: none;
+        font-size: 22px;
+        padding: 16px;
+        right: 0px;
+    }
+     .navbar-software_creation_mobile{
+        font: var(--font-title);
+        color: var(--lightest-slate);
+        text-decoration: none;
+        font-size: 22px;
+        padding: 16px;
+        right: 0px;
+    }
+    .navbar-blog_mobile{
+        font: var(--font-title);
+        color: var(--lightest-slate);
+        text-decoration: none;
+        font-size: 22px;
+        padding: 16px;
+        right: 0px;
+    }
+
+   
 }
