@@ -68,7 +68,7 @@ const myWork = () => {
                   onClick={() => window.open(project.link)}
                   className="projectCard_icon"
                 >
-                  <FaGithub size={26} />
+                  <FaGithub size={26} className="github_icon"/>
                 </div>
 
                 {project.open && (

@@ -1,7 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./Navbar.css";
+import { FaGithub } from "react-icons/fa";
 import { MdMenuOpen, MdClose  } from "react-icons/md";
 import GMTClock from "../Components/GMTClock/GMTClock";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(true);
@@ -18,8 +23,17 @@ const Navbar = () => {
   return (
     <div>
       <nav className="navbar-outside navbar">
-        <div className="navbar_clock">
-                <GMTClock/>
+        <div className="navbar_logo">
+          <div className="navbar_logo-text">
+            <FaLinkedin size={22} className="linkedin_icon" onClick={(()=> window.open("https://www.linkedin.com/in/jaffer-sathick-6727a31ab/")) }/>
+            <FaGithub size={22} className="github_icon" onClick={(()=> window.open("https://github.com/xmarzz")) }/>
+            <FaSquareXTwitter size={22} className="twitter_icon" onClick={(()=> window.open("https://twitter.com/xmarzz")) }/>
+            <MdEmail size={22} className="email_icon" onClick={(()=> window.open("mailto:sathickjaffer44@gmail.com"))}/>
+
+          </div>
+          <div className="navbar_clock">
+                  <GMTClock/>
+          </div>
         </div>
 
         <div className="navbar_text">
