@@ -41,7 +41,7 @@ const Navbar = () => {
             <FaSquareXTwitter
               size={22}
               className="twitter_icon"
-              onClick={() => window.open("https://twitter.com/xmarzz")}
+              onClick={() => window.open("https://twitter.com/marzelonnn")}
             />
             <MdEmail
               size={22}
