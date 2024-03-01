@@ -1,6 +1,43 @@
 
 .navbar-outside{
     background-color: var(--navy);
+    position: fixed; 
+    top:  0; 
+    left:  0; 
+    width:  100%; 
+    z-index:  1000;
+}
+
+.navbar-outside{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar_logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.github_icon, .linkedin_icon , .twitter_icon, .email_icon{
+    color: var(--lightest-slate);
+    margin: 12px 4px 4px 12px; 
+}
+.github_icon:hover, .linkedin_icon:hover , .twitter_icon:hover, .email_icon :hover{
+    cursor: pointer;
+    color: var(--green-bright);
+}
+
+
+
+
+.navbar_logo-text{
+    display: flex;
+    flex-direction: row;
+    font-family: var(--font-title);
+    color: var(--lightest-slate);
+    font-size: 22px;
+    margin: 12px 12px 12px 12px;
 }
 
 .navbar_options{ 
@@ -22,11 +59,17 @@
     font-size:  22px;
     text-decoration: none;
     margin: 12px;
+
 }
 
 .navbar_menu-icon,
 .navbar_options-mobile {
     display: none;
+}
+
+.navbar_options :hover{
+    cursor: pointer;
+    color: var(--green-bright);
 }
 
 @media (max-width:  768px) {

@@ -61,7 +61,6 @@
 }
 
 
-
 .projectCard h2 {
     margin-top:  0;
     margin-bottom:  10px;
@@ -83,6 +82,12 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
+.projectCard_top :hover{
+    cursor: pointer;
+    color: var(--green-bright);
+}
+
 
 .projectCard_folder{
     justify-content: start;
