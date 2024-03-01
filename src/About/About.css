@@ -9,6 +9,7 @@
 .about-outside{
     display: flex;
     flex-direction: column;
+    max-width: 550px;
 }
 
 .about_inside{
@@ -29,7 +30,6 @@
 
 .about_details{
     font-size: 18px;
-    max-width: 969px;
     line-height: 1.5;
 }
 
@@ -49,7 +49,7 @@ ul{
 }
 
 .about_skills-names{
-    margin: 3px 0 0 0;
+    margin: 3px 0 0px 2px;
     color: var(--slate);
 }
 
@@ -70,6 +70,7 @@ ul{
 
 .about_arrow{
     color: var(--green-bright);
+    margin: 3px 2px 0 0;
 }
 
 .about-photo{
@@ -156,6 +157,9 @@ ul{
         display: none;
     }
 
+    .about_outside{
+        max-width: 330px;
+    }
      
      .about_tech, .about_actualMe{
         font-size: 16px;

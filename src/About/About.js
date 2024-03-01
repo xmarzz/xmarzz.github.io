@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.css";
-import { IoMdArrowDropright } from "react-icons/io";
+import { ImArrowRight } from "react-icons/im";
+
 
 const About = () => {
   const skills = [
@@ -33,7 +34,7 @@ const About = () => {
           {skills.map((skill) => (
             <div className="about_skills">
               <div className="about_arrow">
-                <IoMdArrowDropright size={22} width={10} height={12} />
+                <ImArrowRight size={9} width={10} height={10} />
               </div>
               <div className="about_skills-names"> {skill} </div>
             </div>

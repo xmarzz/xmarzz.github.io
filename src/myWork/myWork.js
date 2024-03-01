@@ -4,6 +4,7 @@ import { FaGithub } from "react-icons/fa";
 import { MdOutlineDriveFolderUpload } from "react-icons/md";
 import { IoFolderOutline } from "react-icons/io5";
 
+
 const myWork = () => {
   const projects = {
     "Face 2 Face": {
@@ -80,7 +81,7 @@ const myWork = () => {
                     className="projectCard_page"
                   >
                     {" "}
-                    <MdOutlineDriveFolderUpload size={26}/>{" "}
+                    <MdOutlineDriveFolderUpload size={30} className="projectCard_page-icon"/>{" "}
                   </div>
                 )}
               </div>

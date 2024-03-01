@@ -28,9 +28,6 @@
     color: var(--green-bright);
 }
 
-
-
-
 .navbar_logo-text{
     display: flex;
     flex-direction: row;
@@ -77,6 +74,7 @@
     .navbar_menu-icon {
         display: block;
         cursor: pointer;
+        margin: 30px 6px 0 0;
     }
 
     .navbar {
@@ -115,28 +113,51 @@
         top: 3px;
     }
 
-    .navbar_menuIcon{
+    .navbar_menu-Icon{
         right: 2px;
         top: 2px;
         position: fixed;
         color: aliceblue;
-        margin: 2px 6px 2px 2px;;
+        margin: 2px 6px 2px 2px;
+        cursor: pointer;
     }
+
+   
 
     .navbar_options-mobile{
         text-decoration: none;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         position: fixed;
-        right: 0px;
+        right: 0px; 
         top: 40px;
         bottom: 0px;
-        justify-content: end;
-        display: none;
+        margin: 52px 0 0 0;
+        cursor: pointer;
+        justify-content: start;
+        transform: translateX(100%); 
+        transition: transform 0.5s ease-out; 
         
     }
 
+    .navbar_options-mobile.open {
+        transform: translateX(0); 
+
+    }
+
     .navbar-home_mobile {
+        font: var(--font-title);
+        color: var(--lightest-slate);
+        text-decoration: none;
+        font-size: 22px;
+        padding: 16px;
+        right: 0px;
+        align-items: end;
+    }
+
+
+
+    .navbar-about_mobile{
 
         font: var(--font-title);
         color: var(--lightest-slate);
@@ -147,19 +168,6 @@
         align-items: end;
     }
 
-    .navbar_options-mobile.open{
-        display: block;
-    }
-
-    .navbar-about_mobile{
-
-        font: var(--font-title);
-        color: var(--lightest-slate);
-        text-decoration: none;
-        font-size: 22px;
-        padding: 16px;
-        right: 0px;
-    }
      .navbar-software_creation_mobile{
         font: var(--font-title);
         color: var(--lightest-slate);
@@ -167,15 +175,15 @@
         font-size: 22px;
         padding: 16px;
         right: 0px;
+        align-items: end;
     }
-    .navbar-blog_mobile{
-        font: var(--font-title);
-        color: var(--lightest-slate);
-        text-decoration: none;
-        font-size: 22px;
-        padding: 16px;
-        right: 0px;
+    
+    .navbar_logo-text{
+        margin: 0 0 0 0;
+    }
+    .github_icon, .linkedin_icon , .twitter_icon, .email_icon{
+        margin: 0px 2px 2px 2px; 
     }
 
-   
+
 }
