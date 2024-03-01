@@ -3,7 +3,6 @@
     scroll-behavior: smooth;
 }
 
-
 .home_page{
     padding: 450px 15% 250px 15%;
     display: flex;
@@ -54,7 +53,7 @@
     }
 
     .home_intro{
-        font-size: 46px;
+        font-size: 42px;
         padding: 0 12px;
     }   
 
@@ -63,7 +62,7 @@
     }
 
     .home_intro2{
-        font-size: 28px;
+        font-size: 22px;
         padding: 0 12px;
     }
 
@@ -73,3 +72,15 @@
     }
 }
 
+@media screen and (min-width:  768px) and (max-width:  1024px){
+    .home_intro{
+        font-size: 54px;
+    }
+    .home_intro2{
+        font-size: 32px;
+    }
+    .home_mailme{
+        font: 24px;
+    }
+
+}
