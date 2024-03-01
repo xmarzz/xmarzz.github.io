@@ -80,7 +80,8 @@
         font-size: 32px;
     }
     .home_mailme{
-        font: 24px;
+        font: 22px;
+        padding: 0 12px 12px 0;
     }
 
 }
