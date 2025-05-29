@@ -5,6 +5,7 @@ import About from "./About/About.js";
 import MyWork from "./myWork/myWork.js";
 import Navbar from "./Navbar/Navbar.js";
 import Footer from "./Footer/Footer.js";
+import Experience from "./Experience/Experience.js"; 
 
 const App = () => {
   return (
@@ -16,6 +17,11 @@ const App = () => {
       <section id="home">
         <Home />
       </section>
+
+      <section id="experience">
+        <Experience/> 
+      </section>
+
       <section id="about">
         <About />
       </section>
