@@ -98,7 +98,7 @@
 .projectCard_top-right{
     display: flex;
     flex-direction: row-reverse;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .projectCard_icon, .projectCard_page{

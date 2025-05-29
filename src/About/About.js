@@ -51,9 +51,9 @@ const About = () => {
       </div>
       <div className="about-photo">
         <img
-          src="/boyThink.jpg"
-          alt="My Profile Picture"
-          sizes="450"
+          src="/jaffer_photo2.jpg"
+          alt=""
+          sizes="450" 
           width={300}
           height={300}
         />

@@ -3,7 +3,7 @@
     color: var(--lightest-slate);
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: flex-end;
     margin: 26px 26px 0 0;
     line-height: 1.5;
     font-size: 1.2rem;
