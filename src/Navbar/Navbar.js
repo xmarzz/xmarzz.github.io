@@ -56,47 +56,38 @@ const Navbar = () => {
           </div>
         </div>
 
+          <div
+            className={`navbar_overlay ${!navbar ? "show" : ""}`}
+            onClick={handleClick}
+          />
         <div className="navbar_text">
           <div className="navbar_menu" onClick={handleClick}>
             <div className="navbar_menu-icon" >
-              {navbar ? (
+              {navbar && (
                 <RxHamburgerMenu
                   size={28}
                   color="#64ffda"
                   className="hamburger-active"
                 />
-              ) : (
+              )}
+            </div>
+            </div>
+            
+            <>
+              <div className={`navbar_options-mobile ${!navbar ? "open" : "close"}`}>
                 <MdClose
                   size={30}
                   color="#64ffda"
-                  className="hamburger-inactive"
+                  className="hamburger-inactive" 
+                  onClick={handleClick}
                 />
-              )}
+              <a href="#home" className="navbar-home_mobile" onClick={handleClick}>/Home</a>
+              <a href="#about" className="navbar-about_mobile" onClick={handleClick}>/About</a>
+              <a href="#experience" className="navbar-about_mobile" onClick={handleClick}>/Experience</a>
+              <a href="#myWork" className="navbar-software_creation_mobile" onClick={handleClick}>/software creation</a>
             </div>
+          </>
 
-            <div
-              className={`navbar_options-mobile ${navbar ? "close" : "open"}`}
-            >
-              <div>
-                {" "}
-                <a href="#home" className="navbar-home_mobile">
-                  /Home
-                </a>
-              </div>
-              <div>
-                {" "}
-                <a href="#about" className="navbar-about_mobile">
-                  /About
-                </a>
-              </div>
-              <div>
-                {" "}
-                <a href="#myWork" className="navbar-software_creation_mobile">
-                  /software creation
-                </a>
-              </div>
-            </div>
-          </div>
           <div className="navbar_options">
             {" "}
             <a href="#home" className="navbar-inside navbar-home">
@@ -104,6 +95,9 @@ const Navbar = () => {
             </a>
             <a href="#about" className="navbar-inside navbar-about">
               /About
+            </a>
+            <a href="#experience" className="navbar-inside navbar-experience">
+              /Experience
             </a>
             <a
               href="#myWork"
