@@ -18,7 +18,7 @@ const About = () => {
       <div className="about-outside">
         <div className="about_inside">
           / about me{" "}
-          <div className="about-line">
+          <div className="about-line">  
             <hr />
           </div>
         </div>

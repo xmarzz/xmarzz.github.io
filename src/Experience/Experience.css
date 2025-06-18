@@ -81,7 +81,7 @@
 
   @media (max-width: 768px) {
   .experience {
-    padding: 450px 4%;
+    padding: 100px 4%;
     display: flex;
     flex-direction: column;
     max-width: 112em;

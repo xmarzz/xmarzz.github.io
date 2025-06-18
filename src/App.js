@@ -18,13 +18,15 @@ const App = () => {
         <Home />
       </section>
 
-      <section id="experience">
-        <Experience/> 
-      </section>
 
       <section id="about">
         <About />
       </section>
+      
+      <section id="experience">
+        <Experience/> 
+      </section>
+
       <section id="myWork">
         {" "}
         <MyWork />{" "}

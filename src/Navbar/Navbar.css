@@ -50,7 +50,7 @@
     display: none;
 }
 
-.navbar-home, .navbar-about, .navbar-software_creation {
+.navbar-home, .navbar-about, .navbar-software_creation, .navbar-experience {
     color: var(--lightest-slate);
     font-family: var(--font-title);
     font-size:  22px;
@@ -71,11 +71,11 @@
 
 @media (max-width:  768px) {
 
-    .navbar_menu-icon {
+     .navbar_menu-icon {
         display: block;
         cursor: pointer;
         margin: 30px 6px 0 0;
-    }
+    } 
 
     .navbar {
         flex-direction: row;
@@ -91,7 +91,7 @@
     .navbar-inside {
         display: block;
         margin:  0;
-    }
+    } 
 
     .navbar-home::after, .navbar-about::after, .navbar-software_creation::after {
         display: inline-block;
@@ -122,29 +122,31 @@
         cursor: pointer;
     }
 
-   
-
     .navbar_options-mobile{
         text-decoration: none;
-        display: flex;
+        display: flex; 
         flex-direction: column;
         position: fixed;
         right: 0px; 
-        top: 40px;
+        top: 0px;
         bottom: 0px;
-        margin: 52px 0 0 0;
+        padding-top: 60px;
+        width: 100vw;
+        height: 100vh;
         cursor: pointer;
         justify-content: flex-start;
         transform: translateX(100%); 
-        transition: transform 0.5s ease-out; 
+        transition: transform 0.4s ease-in-out; 
+        z-index: 9999;
+        overflow-y: auto;
         
     }
 
     .navbar_options-mobile.open {
-        transform: translateX(0); 
+        transform: translateX(0%); 
 
     }
-
+  
     .navbar-home_mobile {
         font: var(--font-title);
         color: var(--lightest-slate);
@@ -155,10 +157,7 @@
         align-items: end;
     }
 
-
-
     .navbar-about_mobile{
-
         font: var(--font-title);
         color: var(--lightest-slate);
         text-decoration: none;
@@ -184,6 +183,40 @@
     .github_icon, .linkedin_icon , .twitter_icon, .email_icon{
         margin: 0px 2px 2px 2px; 
     }
+    
+    .navbar_overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+    }
 
+    .navbar_overlay.show {
+        opacity: 20; 
+        pointer-events: auto;
+    }
+
+    .navbar_options-mobile {
+        background-color: var(--navy);
+        width: 260px;
+        padding: 70px 20px;
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+    }
+
+
+    .hamburger-inactive {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        z-index: 10001;
+        cursor: pointer;
+    }
 
 }
