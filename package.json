@@ -2,6 +2,9 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^7.1.0",
     "@fortawesome/react-fontawesome": "^3.1.1",
