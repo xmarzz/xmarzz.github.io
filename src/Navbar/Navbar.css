@@ -20,7 +20,7 @@
 }
 
 .github_icon, .linkedin_icon , .twitter_icon, .email_icon{
-    color: var(--lightest-slate);
+    color: var(--white) !important;
     margin: 12px 4px 4px 12px; 
 }
 .github_icon:hover, .linkedin_icon:hover , .twitter_icon:hover, .email_icon :hover{

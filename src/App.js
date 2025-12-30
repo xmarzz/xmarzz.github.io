@@ -6,6 +6,7 @@ import MyWork from "./myWork/myWork.js";
 import Navbar from "./Navbar/Navbar.js";
 import Footer from "./Footer/Footer.js";
 import Experience from "./Experience/Experience.js"; 
+import FadeInSection from "./Components/FadeInSection/FadeInSection";
 
 const App = () => {
   return (
@@ -15,28 +16,38 @@ const App = () => {
         <Navbar />{" "}
       </div>
       <section id="home">
-        <Home />
+        <FadeInSection>
+             <Home />
+        </FadeInSection>
       </section>
 
-
       <section id="about">
-        <About />
+        <FadeInSection>
+             <About />
+        </FadeInSection>
       </section>
       
       <section id="experience">
-        <Experience/> 
+         {/* Experience already implements FadeInSection internally for its items, 
+             but wrapping the whole section ensures the title animates too if needed. 
+             However, checking Experience.js, it uses FadeInSection internally. 
+             Let's wrap it to be consistent with the user's request for smooth slide of SECTIONS. */}
+        <FadeInSection>
+            <Experience/> 
+        </FadeInSection>
       </section>
 
       <section id="myWork">
-        {" "}
-        <MyWork />{" "}
+        <FadeInSection>
+             <MyWork />
+        </FadeInSection>
       </section>
      
       <section id='footer'>
-        <Footer/>
+        <FadeInSection>
+             <Footer/>
+        </FadeInSection>
       </section>
-
-
     </div>
   );
 };

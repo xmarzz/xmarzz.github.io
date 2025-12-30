@@ -26,6 +26,7 @@ const Navbar = () => {
           <div className="navbar_logo-text">
             <FaLinkedin
               size={22}
+              color="#e6f1ff"
               className="linkedin_icon"
               onClick={() =>
                 window.open(
@@ -35,19 +36,22 @@ const Navbar = () => {
             />
             <FaGithub
               size={22}
+              color="#e6f1ff"
               className="github_icon"
               onClick={() => window.open("https://github.com/xmarzz")}
             />
             <FaSquareXTwitter
               size={22}
+              color="#e6f1ff"
               className="twitter_icon"
               onClick={() => window.open("https://twitter.com/marzelonnn")}
             />
             <MdEmail
               size={22}
+              color="#e6f1ff"
               className="email_icon"
               onClick={() =>
-                window.open("https://mailto:sathickjaffer44@gmail.com")
+                window.open("mailto:jaffersathick@jaffersathick.in")
               }
             />
           </div>

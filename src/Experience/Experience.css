@@ -1,126 +1,200 @@
 .experience {
-    padding: 120px 15% 200px 15% ;
+    padding: 150px 15% 150px 15%;
     display: flex;
     flex-direction: column;
     max-width: 112em;
     font-family: var(--font-title);
-  }
-
-  .experience_outside{
-    display: flex;
-    flex-direction: column;
-    max-width: 550px;
-    padding: 12px 0;
-  }
-
-  .experience_inside {
-    font-size: 46px;
-    font-weight: 700;
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    color: var(--lightest-slate);
-  }
-  
-  .experience_parts{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .experience-line hr{
-    border: none;
-    height: 1px;
-    background-color: #475da3; 
-    margin: 15px 3px;     
-  }
-
-  .experience-item {
-    margin-bottom: 2rem;
-    padding: 1.5rem;
-    background-color: var(--light-navy);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-    max-width: 58rem;
-  }
-  
-  .experience-item:hover {
-    transform: translateY(-4px);
-  }
-  
-  .experience-item h3 {
-    color: var(--lightest-slate);
-    margin-bottom: 0.5rem;
-  }
-  
-  .experience-item p {
-    font-size: 14px;
-    color: var(--slate);
-    margin-bottom: 1rem;
-  }
-  
-  .experience-item ul {
-    list-style: inside square;
-    color: var(--light-slate);
-    line-height: 1.6;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .fade-in-section {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  }
-  
-  .fade-in-section.is-visible {
-    opacity: 1;
-    transform: none;
-  }
-  
-
-  @media (max-width: 768px) {
-  .experience {
-    padding: 100px 4%;
-    display: flex;
-    flex-direction: column;
-    max-width: 112em;
-    font-family: var(--font-title);
-  }
-
-  .experience_outside {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .experience_inside {
-    font-size: 32px;
-    font-weight: 700;
-    display: flex;
-    flex-direction: column;
-    color: var(--lightest-slate);
-  }
-
-  .experience-item p {
-    font-size: 14px;
-  }
-
-  .experience-item ul {
-    font-size: 14px;
-  }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .experience_outside {
-    max-width: 330px;
-  }
+/* Section Header Styles */
+.section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    white-space: nowrap;
+}
 
-  .experience_inside {
-    font-size: 36px;
-  }
+.section-subtitle {
+    color: var(--green-bright);
+    font-family: var(--font-mono, monospace); 
+    font-size: 1.2rem; 
+    margin-right: 15px;
+    font-weight: 500;
+}
 
-  .experience-item p,
-  .experience-item ul {
-    font-size: 15px;
-  }
+.section-title {
+    color: var(--lightest-slate);
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0;
+    margin-right: 20px;
+    font-family: var(--font-title);
+}
+
+.section-line {
+    height: 1px;
+    background-color: var(--lightest-navy);
+    width: 300px;
+    max-width: 100%;
+    opacity: 0.5;
+}
+
+/* Timeline Styles */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin-left: 10px;
+    border-left: 2px solid var(--lightest-navy);
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 60px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -7px;
+    top: 8px; /* Adjusted for larger font title alignment */
+    width: 14px; /* Slightly larger marker */
+    height: 14px;
+    border-radius: 50%;
+    background-color: var(--navy);
+    border: 2px solid var(--green-bright);
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.timeline-item:hover .timeline-marker {
+    background-color: var(--green-bright);
+    box-shadow: 0 0 10px rgba(100, 255, 218, 0.4);
+}
+
+.timeline-content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Job Content Styles */
+.job-header {
+    margin-bottom: 10px;
+}
+
+.job-title {
+    color: var(--lightest-slate);
+    font-size: 26px; /* Increased from 22px */
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.company {
+    color: var(--green-bright);
+}
+
+.job-meta {
+    font-family: var(--font-mono, monospace);
+    font-size: 15px; /* Increased from 13px */
+    color: var(--light-slate);
+    margin-bottom: 15px;
+}
+
+.job-range::after {
+    content: " • ";
+    margin: 0 5px;
+    color: var(--slate);
+}
+
+.job-description {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.job-description li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    color: var(--slate);
+    font-size: 18px; /* Increased from 16px */
+    line-height: 1.6;
+}
+
+.job-description li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: var(--green-bright);
+    font-size: 16px; /* Increased from 14px */
+    line-height: 1.6; 
+}
+
+.job-description a {
+    color: var(--green-bright);
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+.job-description a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: var(--green-bright);
+    transition: width .3s;
+}
+
+.job-description a:hover::after {
+    width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .experience {
+        padding: 100px 4%;
+        max-width: 112em;
+    }
+
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 40px;
+    }
+    
+    .section-line {
+        display: none;
+    }
+    
+    .section-title {
+        margin-top: 10px;
+        font-size: 28px;
+    }
+    
+    .job-title {
+        font-size: 22px;
+    }
+
+    .job-meta {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+    }
+    
+    .job-range::after {
+        content: ""; 
+        display: none;
+    }
+    
+    .job-description li {
+        font-size: 16px;
+    }
+    
+    .timeline {
+        margin-left: 0; 
+    }
 }

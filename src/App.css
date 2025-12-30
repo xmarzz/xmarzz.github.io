@@ -32,8 +32,11 @@ html {
 head, body{
     padding: 100%;
     background-color: var(--navy);
+    color: var(--slate);
     padding: 0;
     margin: 0;
 }
+
+
 
 

@@ -19,7 +19,7 @@ const Home = () => {
 
         <h2 className="home_intro2"> I create stuff sometimes. </h2>
 
-        <a href="mailto:marzelon44@gmail.com" className="home_mailme">
+        <a href="mailto:jaffersathick@jaffersathick.in" className="home_mailme">
           Say hi! 
         </a>
       </div>
