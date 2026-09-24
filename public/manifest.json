@@ -8,17 +8,17 @@
       "type": "image/x-icon"
     },
     {
-      "src": "websiteLogo.png",
+      "src": "images/websiteLogo.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "logo192.png",
+      "src": "images/logo192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "images/logo512.png",
       "type": "image/png",
       "sizes": "512x512"
     }

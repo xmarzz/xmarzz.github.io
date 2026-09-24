@@ -1,0 +1,43 @@
+
+.blog-navbar{
+    display: flex; 
+    justify-content: space-around; 
+}
+
+.blog-post-wrapper{
+    display : flex; 
+    justify-content: center; 
+    padding-top: 60px; 
+}
+
+.blog-post{
+    max-width: 620px; 
+    padding-top: 60px; 
+}
+
+.back-button{
+    margin: 25px 60px 60px 60px;
+    
+}
+
+.back-link{
+     display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border: 1px solid #2dd4bf;
+  border-radius: 999px;
+  background: transparent;
+  color: #2dd4bf;
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.back-link:hover {
+  background: #2dd4bf;
+  color: #0f172a;
+  transform: translateX(-4px);
+}

@@ -1,7 +1,7 @@
 import React from "react";
-import "./Home.css";
+import "./Hero.css";
 
-const Home = () => {
+const Hero = () => {
 
 
   return (
@@ -27,4 +27,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Hero;

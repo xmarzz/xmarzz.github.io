@@ -5,8 +5,32 @@
     font-size: 16px;
     color: var(--slate);
     padding-bottom: 40px;
+    flex-direction: column; 
 }
 
+.blog-texts{
+    display: flex; 
+    flex-direction: row; 
+    gap: 8px; 
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    margin: 2px;
+}
+
+
+.footer-link{
+    color: #8e9fb6;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+    color: #2dd4bf;
+}
 
 @media (max-width:  768px) {
     .footer {

@@ -85,7 +85,7 @@ const Navbar = () => {
                   className="hamburger-inactive" 
                   onClick={handleClick}
                 />
-              <a href="#home" className="navbar-home_mobile" onClick={handleClick}>/Home</a>
+              <a href="#hero" className="navbar-home_mobile" onClick={handleClick}>/Home</a>
               <a href="#about" className="navbar-about_mobile" onClick={handleClick}>/About</a>
               <a href="#experience" className="navbar-about_mobile" onClick={handleClick}>/Experience</a>
               <a href="#myWork" className="navbar-software_creation_mobile" onClick={handleClick}>/software creation</a>
@@ -94,7 +94,7 @@ const Navbar = () => {
 
           <div className="navbar_options">
             {" "}
-            <a href="#home" className="navbar-inside navbar-home">
+            <a href="#hero" className="navbar-inside navbar-home">
               /Home
             </a>
             <a href="#about" className="navbar-inside navbar-about">
