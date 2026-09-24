@@ -1,7 +1,7 @@
 import "./App.css"
 import HomePage from "./HomePage/HomePage.js"
 import { BrowserRouter, Routes, Route} from "react-router-dom"; 
-import Blog from "./Blog/Blog.js"
+import Blog from "./Blog/Blog"
 import BlogPost from "./Blog/BlogPost"
 
 const App =()=> {
