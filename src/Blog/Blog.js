@@ -20,7 +20,7 @@ const Blog = () => {
           .then((res) => res.text())
           .then((raw) => {
             const {data} = parseFrontmatter(raw); 
-            console.log(data); 
+            // console.log(data); 
             return{
               slug, 
               name : data.title, 
